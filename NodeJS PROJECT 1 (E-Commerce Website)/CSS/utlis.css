@@ -1,0 +1,16 @@
+.btn{
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+.my-2{
+    margin: 26px 0;
+}
+.text-center{
+    text-align: center;
+    width: 100px;
+}
+.my-3{
+    margin: 5px 0;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+    </title>
+    <!-- <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utlis.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="javaScript" href="CSS/script1.js"> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAABhCAYAAACecMnWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAukSURBVHhe7d1njBRlHMfxZwURS8BCLEFDbNFENBpLFEwwUQFjwTsLIYIvjPoGX1gSTSS2qG+MIZYYJSAoAY0ChwJWLFiwBLso9n7W2JHigev+xv/i3s3MM7PH7cPN7feTPMk8d7vDicPv/vPM8zxbKlc4AEAwpba2tnJra6t1AQCN1N7e7rayYwBAIAQvAATWKXgXLlzoNORLo9FotJ5rLS0tlrL/oeIFgMAIXgAIjOAFgMAIXgAIjOAFgMByBe+GDRtcqVSi0XpNGzlypF2dQPFQ8QJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYKW2trZya2tr1Fm4cKE7/fTTo+NaGzZscFtvvbX1tpw99tjDDRgwwHpx3333nfv777+tl2z33Xd322yzjfU6++WXX9yff/5pvWSDBg1yO+20k/Xifv31V/fHH39Ex4MHD3Y77rhjdJzkq6++cuVy2Xr/6c578thtt93cwIEDrdeZ/s70d1ckI0aMcMuXL7de46xfv959//331ovbdddd3bbbbmu9OL1X50izyy67uB122MF62XR96jpNs9dee7mttqqvnvryyy/tKJ/tt98++jfQr18/+0q2H3/80a1du9Z6PUt///r/0JspY5Wv0t7e7pyCt3Ictco3Kv+m4zo6Oja9Zku2GTNm2E+UbNKkSYnvq7ZKaJcrwWivjps+fXri+2rb7Nmz7dXJjj/++E2vnTJlin01WeUC7nTu7r4nT1u6dKmdIW7FihWJ7+nNrRK89tM31osvvpj451fbkiVL7JVxlaApV35RJ76v2t599117dT4TJkxIPE+1LVq0yF6ZX//+/RPP5WulUqk8bNiw8sSJE8vz5s0rV4ozO1uyU045JfE8PdF07t6upaVl089bCd5yoYYaKr8k7ChZ5T/OjpKdeOKJ3mpS1b7vt3jlAnWV/8nWi1Ml8txzz1kPzW7x4sWb7n6SqGofPny49bLpbqpaNaW5++677aixKlkSVcpz5sxxZ511lttvv/3cI488Yt9FlkIF71NPPeW9kMeMGeO97Tv77LPtKNmQIUPcqFGjrBen7/mGGSrVRjQsA4hCyefCCy+0o3x0vnXr1lkvmcLPNzTSKF988UVUlFx33XX2FfgUKng1Fun7rbrddtu50aNHW68zjeuOGzfOeunOPPNMO4rLqqizKnI0D939PPbYY9aL01i+KsV6zJgxw47S6Rf/vffea73wrr322lw/Z7Mr3KyGBQsW2FGypIeDokDWxZ5Fg+BJDydKpZI3uFevXu2WLl1qPTS7Bx980HV0dFgvbtKkSVGhkNdrr73m3nnnHev5hRpuSHPZZZe5n3/+2XpIUrjgffzxx71PR0899dRoLLarrGGGKj39P/bYY633vyOOOMLtueee1otTJZ51G4jmkTXMcMEFF9hRPvVUkR9//LF7/vnnrReehgNvu+026yFJ4YL3r7/+ck888YT14jQ9p+s4raagKZDzOuOMM+zofwwzIC8Fn2+q29FHH+0OOeQQ62Vbs2aNu//++62XT09VvbfffntUUKip4Pn666+jh4YqRHz0mloqWg488MDU5qv+9b2k91SbryDqrQoXvJIVcl2D84QTTsg1zFCl92tooVZ1rnMSXZSPPvqo9dDspk6dakfJ6q12582b532onGT+/Pnu999/t173af6+no+oaR64Qk4P0Z599lm3zz772Kvi3nzzzU53gHfeeadbtWpVajvqqKPslXH6XtJ7qk3nLppCBq9+m/rGz7qO0/oemCUZOnRoVJVUHXTQQe6AAw6wXtyTTz4ZjfGiuSlobrnlFjdt2jT7SpwW4IwfP956+fiq17RFMd2pkuuhRR9Zw3daNIFkhQze3377zT3zzDPWi9M47ciRI6Njjfeedtpp0XE9asPaV+0KwwzN6/LLL4+utYMPPjhaPXXJJZd4VxZOnDgxWvmV10cffeReeOEF63WmKvTGG2+0XlyjH7JlrRarrXjRWSGDV7LCrhqcxx13XDTuW6/a4Qpf8Gr6TtfxLDSP999/37300ktu5cqVmcvNtTjn0ksvtV4+vvDUc4vzzz8/terVTIi3337bej3vrbfesqNkunNEssIG78MPP+z++ecf68UpLDVOm/SgrMp3KzRs2LDoAcLee+/tDj30UPtq3LJly7xr54EqDTHsu+++1suWNSdX1bOGLnx3dI2qerWYae7cudaL23nnneuq7JtNYYP3hx9+8D451kOAY445JnVer9xxxx3ugw8+sF6cqmaGGdATtCoy66FbV0uWLImu8yQKtpNOOik6VgCnybPazefpp592t956a9Q0fn3VVVdFD9c0L37jxo32qjjf0noUOHglazHFzTffHO1GlkZPftXSKHh9FbPG8h566CHrAelUlerZQz18c3dVPVd36hs7dmzqcFqe/R18NKPi4osvjprGr2+44YZozrpvHFvOO+88O0KSQgdv1gWlijeNKl2Nz/nCW7eFvnNobK9o2yliy9BteT3bL2rrQC0WSlNb5WrKl2+mRKMfsnWlu0zfnicoePBqb1o9QOiOaqWrBwSffvppdFwvhhmQl/bk1W16Xvfcc0/qrbzmz2pns1q+4QbNAPr888+t11gqVmbNmmU9pCl08Ep3w6+20s0askizObdw6BsUkN98803UNJ/bR1VvnlkGuo2fOXOm9eI0x/zVV1/t1PQgOW24Iet8PeXkk0+Ofhbf1qv4T1MGryrc2qkwvnHeNG+88UawKgK9lx6aadqUmvZ7Vvik0SycK664wnrptCrss88+s17cfffdF4VvbdOQmG9jGl8F3RM03qxw787UzWZU+OD98MMP3XvvvWe9fLpWuCtWrIiGLerBMAOSZO1Hq31GfIt/pBFjsqrIfXucpNFUyosuuihqRx55pH01Tlu26sEb8il88Eq9IZhU4dY73LClglfr77VcOqvV849M85WTzpHUrrzySnsXkhx++OGZKyW12i1tVoBmITTq2upOoGufE22UozZ79mzv57nddddd7pNPPrEefJoueLW7kircruoJXlXZ2pxjS9DqJy2Dzmr1fuBh0jmSWtfNgxCnzcB9f0+vv/66e+CBB6zXmcaBG7XUVissN2f/BO0ENmHCBOvF8Ys5vz4RvBqv9Y2J1Uobz9XUsG+//dZ6ft19GIfmcNhhh3kX7siUKVMSPxG7kZ/eoGBU1bo5NDPD97mEmverB2zw6xPBK3mr3rTQ1K1f3lkKBC+yZFW9KhS67mKmStg360FDQlrN5mtZH/uzuePH2qXPV/WKhlLg11TBq8UOL7/8svXi8sxu0CR4zWgAfLTRuW/Vo1x//fWdNtbJqnYnT54czZrwtXPPPTc2x7eWFg7p7m5zXH311d6qV59+wcZRfn0meF955ZXMVWQKZ9/GOtp+76effrJeskY9+EDfc80113irXl1rN910U3SctX+u9r/N++GYWct1N3c4Y//993fnnHOO9ZJp2lwjp68VXZ8J3jxDBVlDBLpQss5B8CKv4cOHZ24Wro1zVDDobsv3iRFaEpx3ty/9mb7X6oM4s7awzJI11quHzyEWbRRWJUg0ryVqldCp5FdcR0fHptfQaL2hVW6n7eoEer+WlpZN1257e3u5z1S8AFAUBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABJYrePv37+/K5TKN1mva8uXL7eoEioeKFwACI3gBIDCCFwACI3gBIDCCFwACK7W1tZVbW1utCwBopPb2dipeAAiN4AWAoJz7F5UN8/yg9+z8AAAAAElFTkSuQmCC" alt="" width="100px">
+            </div>
+            <div class="menu-bar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/orders">Orders</a></li>
+                <li><a href="/wishlist">Wishlist</a></li>
+                <!-- <li><a href="/about">About</a></li> -->
+                <li><a href="/contact">Contact</a>
+                
+                </li>
+            </ul>
+            </div>
+            <div class="login">
+                <ul>
+                    <li><a href="/login">Log in</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="search">
+            <input type="text" name="" id="" placeholder="Search your orders here">
+            <button class="btn">Search</button>
+        </div>
+
+        <div class="box1">
+            <h1>Filters</h1>
+            <p>ORDER STATUS</p>
+            <form>   
+                <input type="checkbox" id="one" name="one" value="">
+                <label for="one">On the way</label><br>
+                <input type="checkbox" id="two" name="two" value="">
+                <label for="two">Delivered</label><br>
+                <input type="checkbox" id="three" name="three" value="">
+                <label for="three">Cancelled</label><br>
+                <input type="checkbox" id="four" name="four" value="">
+                <label for="four">Returned</label>
+            </form>
+            <p>ORDER TIME</p>
+            <form>
+                <input type="checkbox" id="one1" name="one1" value="">
+                <label for="one1">Last 30 days</label><br>
+                <input type="checkbox" id="two2" name="two2" value="">
+                <label for="two2">2022</label><br>
+                <input type="checkbox" id="three3" name="three3" value="">
+                <label for="three3">2021</label><br>
+                <input type="checkbox" id="four4" name="four4" value="">
+                <label for="four4">2019</label><br>
+                <input type="checkbox" id="five5" name="five5" value="">
+                <label for="five5">Older</label>
+            </form>
+        </div>
+        <div class="card-item">
+            <p>No items in card</p>
+        </div>
+    </main>
+   
+    <style>
+:root {
+    --main--bg-color: #2874f0;
+    background-color: #f1f3f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main--bg-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    
+}
+
+nav ul {
+    height: 54px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 30px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+.card-item{
+            width: 800px;
+            height: 150px;
+            background: white;
+            /* border: 0.3px solid black; */
+            border-color: black;
+            color: black;
+            top: 40%;
+            left: -12%;
+            position: absolute;
+            transform: translate(70%,-60%);
+            box-sizing: border-box;
+            padding: 50px 30px;    
+
+}
+.card-item p{
+    text-align: center;
+}
+
+
+ 
+
+@media (max-width: 768px) {
+    nav ul {
+      height: auto;
+    }
+    
+    nav ul li {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    
+    nav ul li a {
+      padding: 10px;
+    }
+    
+    .logo img {
+      width: 60px;
+    }
+}
+  
+.search {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 60px;
+}
+
+.btn{
+    width: 60px;
+    font-weight: bolder;
+    background-color: #2874f0;
+    color: white;
+    cursor: pointer;
+}
+
+.search input {
+    width: 650px;
+    height: 37px;
+    border-radius: 1px;
+    margin: 0 50px 0 4px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    padding: 0 12px;
+    position: relative; 
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 23px;
+}
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+
+
+</style>
+<style>
+    
+.box1{
+            width: 300px;
+            height: 450px;
+            background: white;
+            /* border: 0.3px solid black; */
+            border-color: black;
+            color: black;
+            top: 63%;
+            left: 0%;
+            position: absolute;
+            transform: translate(5%,-60%);
+            box-sizing: border-box;
+            padding: 50px 30px;
+        }
+
+.box1 h1{
+    position: relative;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 2.2; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;   
+}
+
+.box1 p{
+    color: black;
+    font-size: 18px;
+    font-weight: 00;
+    line-height: 2.2;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.box1 form{
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+.box1 form input{
+    border: 0.2px solid black;
+}
+
+
+</style>
+</body>
+</html>

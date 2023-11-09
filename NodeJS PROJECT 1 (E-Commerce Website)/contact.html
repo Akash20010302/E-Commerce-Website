@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+    </title>
+    <!-- <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utlis.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="javaScript" href="CSS/script1.js"> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAABhCAYAAACecMnWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAukSURBVHhe7d1njBRlHMfxZwURS8BCLEFDbNFENBpLFEwwUQFjwTsLIYIvjPoGX1gSTSS2qG+MIZYYJSAoAY0ChwJWLFiwBLso9n7W2JHigev+xv/i3s3MM7PH7cPN7feTPMk8d7vDicPv/vPM8zxbKlc4AEAwpba2tnJra6t1AQCN1N7e7rayYwBAIAQvAATWKXgXLlzoNORLo9FotJ5rLS0tlrL/oeIFgMAIXgAIjOAFgMAIXgAIjOAFgMByBe+GDRtcqVSi0XpNGzlypF2dQPFQ8QJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYAQvAARG8AJAYKW2trZya2tr1Fm4cKE7/fTTo+NaGzZscFtvvbX1tpw99tjDDRgwwHpx3333nfv777+tl2z33Xd322yzjfU6++WXX9yff/5pvWSDBg1yO+20k/Xifv31V/fHH39Ex4MHD3Y77rhjdJzkq6++cuVy2Xr/6c578thtt93cwIEDrdeZ/s70d1ckI0aMcMuXL7de46xfv959//331ovbdddd3bbbbmu9OL1X50izyy67uB122MF62XR96jpNs9dee7mttqqvnvryyy/tKJ/tt98++jfQr18/+0q2H3/80a1du9Z6PUt///r/0JspY5Wv0t7e7pyCt3Ictco3Kv+m4zo6Oja9Zku2GTNm2E+UbNKkSYnvq7ZKaJcrwWivjps+fXri+2rb7Nmz7dXJjj/++E2vnTJlin01WeUC7nTu7r4nT1u6dKmdIW7FihWJ7+nNrRK89tM31osvvpj451fbkiVL7JVxlaApV35RJ76v2t599117dT4TJkxIPE+1LVq0yF6ZX//+/RPP5WulUqk8bNiw8sSJE8vz5s0rV4ozO1uyU045JfE8PdF07t6upaVl089bCd5yoYYaKr8k7ChZ5T/OjpKdeOKJ3mpS1b7vt3jlAnWV/8nWi1Ml8txzz1kPzW7x4sWb7n6SqGofPny49bLpbqpaNaW5++677aixKlkSVcpz5sxxZ511lttvv/3cI488Yt9FlkIF71NPPeW9kMeMGeO97Tv77LPtKNmQIUPcqFGjrBen7/mGGSrVRjQsA4hCyefCCy+0o3x0vnXr1lkvmcLPNzTSKF988UVUlFx33XX2FfgUKng1Fun7rbrddtu50aNHW68zjeuOGzfOeunOPPNMO4rLqqizKnI0D939PPbYY9aL01i+KsV6zJgxw47S6Rf/vffea73wrr322lw/Z7Mr3KyGBQsW2FGypIeDokDWxZ5Fg+BJDydKpZI3uFevXu2WLl1qPTS7Bx980HV0dFgvbtKkSVGhkNdrr73m3nnnHev5hRpuSHPZZZe5n3/+2XpIUrjgffzxx71PR0899dRoLLarrGGGKj39P/bYY633vyOOOMLtueee1otTJZ51G4jmkTXMcMEFF9hRPvVUkR9//LF7/vnnrReehgNvu+026yFJ4YL3r7/+ck888YT14jQ9p+s4raagKZDzOuOMM+zofwwzIC8Fn2+q29FHH+0OOeQQ62Vbs2aNu//++62XT09VvbfffntUUKip4Pn666+jh4YqRHz0mloqWg488MDU5qv+9b2k91SbryDqrQoXvJIVcl2D84QTTsg1zFCl92tooVZ1rnMSXZSPPvqo9dDspk6dakfJ6q12582b532onGT+/Pnu999/t173af6+no+oaR64Qk4P0Z599lm3zz772Kvi3nzzzU53gHfeeadbtWpVajvqqKPslXH6XtJ7qk3nLppCBq9+m/rGz7qO0/oemCUZOnRoVJVUHXTQQe6AAw6wXtyTTz4ZjfGiuSlobrnlFjdt2jT7SpwW4IwfP956+fiq17RFMd2pkuuhRR9Zw3daNIFkhQze3377zT3zzDPWi9M47ciRI6Njjfeedtpp0XE9asPaV+0KwwzN6/LLL4+utYMPPjhaPXXJJZd4VxZOnDgxWvmV10cffeReeOEF63WmKvTGG2+0XlyjH7JlrRarrXjRWSGDV7LCrhqcxx13XDTuW6/a4Qpf8Gr6TtfxLDSP999/37300ktu5cqVmcvNtTjn0ksvtV4+vvDUc4vzzz8/terVTIi3337bej3vrbfesqNkunNEssIG78MPP+z++ecf68UpLDVOm/SgrMp3KzRs2LDoAcLee+/tDj30UPtq3LJly7xr54EqDTHsu+++1suWNSdX1bOGLnx3dI2qerWYae7cudaL23nnneuq7JtNYYP3hx9+8D451kOAY445JnVer9xxxx3ugw8+sF6cqmaGGdATtCoy66FbV0uWLImu8yQKtpNOOik6VgCnybPazefpp592t956a9Q0fn3VVVdFD9c0L37jxo32qjjf0noUOHglazHFzTffHO1GlkZPftXSKHh9FbPG8h566CHrAelUlerZQz18c3dVPVd36hs7dmzqcFqe/R18NKPi4osvjprGr2+44YZozrpvHFvOO+88O0KSQgdv1gWlijeNKl2Nz/nCW7eFvnNobK9o2yliy9BteT3bL2rrQC0WSlNb5WrKl2+mRKMfsnWlu0zfnicoePBqb1o9QOiOaqWrBwSffvppdFwvhhmQl/bk1W16Xvfcc0/qrbzmz2pns1q+4QbNAPr888+t11gqVmbNmmU9pCl08Ep3w6+20s0askizObdw6BsUkN98803UNJ/bR1VvnlkGuo2fOXOm9eI0x/zVV1/t1PQgOW24Iet8PeXkk0+Ofhbf1qv4T1MGryrc2qkwvnHeNG+88UawKgK9lx6aadqUmvZ7Vvik0SycK664wnrptCrss88+s17cfffdF4VvbdOQmG9jGl8F3RM03qxw787UzWZU+OD98MMP3XvvvWe9fLpWuCtWrIiGLerBMAOSZO1Hq31GfIt/pBFjsqrIfXucpNFUyosuuihqRx55pH01Tlu26sEb8il88Eq9IZhU4dY73LClglfr77VcOqvV849M85WTzpHUrrzySnsXkhx++OGZKyW12i1tVoBmITTq2upOoGufE22UozZ79mzv57nddddd7pNPPrEefJoueLW7kircruoJXlXZ2pxjS9DqJy2Dzmr1fuBh0jmSWtfNgxCnzcB9f0+vv/66e+CBB6zXmcaBG7XUVissN2f/BO0ENmHCBOvF8Ys5vz4RvBqv9Y2J1Uobz9XUsG+//dZ6ft19GIfmcNhhh3kX7siUKVMSPxG7kZ/eoGBU1bo5NDPD97mEmverB2zw6xPBK3mr3rTQ1K1f3lkKBC+yZFW9KhS67mKmStg360FDQlrN5mtZH/uzuePH2qXPV/WKhlLg11TBq8UOL7/8svXi8sxu0CR4zWgAfLTRuW/Vo1x//fWdNtbJqnYnT54czZrwtXPPPTc2x7eWFg7p7m5zXH311d6qV59+wcZRfn0meF955ZXMVWQKZ9/GOtp+76effrJeskY9+EDfc80113irXl1rN910U3SctX+u9r/N++GYWct1N3c4Y//993fnnHOO9ZJp2lwjp68VXZ8J3jxDBVlDBLpQss5B8CKv4cOHZ24Wro1zVDDobsv3iRFaEpx3ty/9mb7X6oM4s7awzJI11quHzyEWbRRWJUg0ryVqldCp5FdcR0fHptfQaL2hVW6n7eoEer+WlpZN1257e3u5z1S8AFAUBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABEbwAkBgBC8ABJYrePv37+/K5TKN1mva8uXL7eoEioeKFwACI3gBIDCCFwACI3gBIDCCFwACK7W1tZVbW1utCwBopPb2dipeAAiN4AWAoJz7F5UN8/yg9+z8AAAAAElFTkSuQmCC" alt="" width="100px">
+            </div>
+            <div class="menu-bar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/orders">Orders</a></li>
+                <li><a href="/wishlist">Wishlist</a></li>
+                <!-- <li><a href="/about">About</a></li> -->
+                <li><a href="/contact">Contact</a>
+                
+                </li>
+            </ul>
+            </div>
+            <div class="login">
+                <ul>
+                    <li><a href="/login">Log in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+
+            <div class="home-content">  
+                <h1>Customer Support?</h1><br>
+                <p>Queries</p>
+                <form>
+                    <p>Order related</p>
+                    <p>Return or Exchange</p>
+                    <p>Delivery related</p>
+                    <p>Others...</p>
+                </form>
+                <div class="btn-box">
+                    <a>Live Chat</a>
+                    <a href="mailto:akashpalm2017@gmail.com">Mail us</a>
+                </div>
+            </div>
+            
+        </section>
+        <div class="box2">
+            <h1>Reach us</h1><br>
+            <p>Email &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; contactus@example.in</p><br>
+            <p>Phone&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; +180071271245</p><br>
+            <p>Address&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Magnet House, E Mall, 6,</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;C.R Avenue, 1st Floor, 133</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;Kolkata,West Bengal</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;700072</p>
+        </div>
+        </main>
+    <style>
+        :root {
+    --main--bg-color: #2874f0;
+    background-color: #f1f3f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: var(--main--bg-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    
+}
+
+.home-content h1{
+    width: 400px;
+    height: 100px;
+    background: transparent;
+    border-color: black;
+    color: black;
+    top: 13%;
+    left: 0%;
+    position: absolute;            
+    box-sizing: border-box;
+    transform: translate(0%,-70%);
+    /* padding: 10px; */
+    /* text-align: center; */
+}
+
+
+.box2{
+            width: 360px;
+            height: 450px;
+            background: #1c00b5;
+            border-color: black;
+            color: #fff;
+            top: 63%;
+            left: 50%;
+            position: absolute;
+            transform: translate(70%,-60%);
+            box-sizing: border-box;
+            padding: 50px 30px;
+        }
+
+.box2 p{
+    cursor: pointer;
+}
+
+
+
+nav ul {
+    height: 54px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 30px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+      height: auto;
+    }
+    
+    nav ul li {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    
+    nav ul li a {
+      padding: 10px;
+    }
+    
+    .logo img {
+      width: 60px;
+    }
+}
+  
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 23px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 550px;
+    height: 27px;
+    border-radius: 1px;
+    margin: 0 50px 0 4px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    padding: 0 12px;
+}
+
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+footer {
+    background-color: var(--main--bg-color);
+    height: 8vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+
+}
+
+
+.btn:hover {
+    font-weight: bolder;
+}
+.slider{
+    overflow: hidden;
+}
+.slider img{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    margin: 12px auto;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .slider img {
+      height: 200px;
+    }
+}
+
+.card{
+    background-color: white;
+    max-width: 81vw;
+    margin: 37px auto;
+    font-family: 'Ubuntu', 'sans-serif';
+}
+.card h2{
+    margin: 9px 0;
+    font-family: 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: medium;
+
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 25px;
+
+}
+.progressbar{
+    background-color: red;
+    height: 2px;
+    animation-name: Load;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+.sub_menu{
+    display: none;
+    position: relative;
+    z-index: 1000;
+}
+.menu-bar ul li:hover .sub_menu{
+    display: block;
+    position: absolute;
+    background: #2874f0;;
+    margin-top: 1px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub_menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub_menu ul li{
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+} 
+
+    </style>
+ 
+    <style>
+.home-content h1{
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 4.2;
+}
+
+.home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #081b29; */
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    /* background: yellowgreen; */
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 100%;
+    background: #1c00b5;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    /* color: #081b29; */
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-box a:hover{
+    color: #00abf0;
+}
+
+
+.btn-box a:nth-child(1){
+    background: #1c00b5;
+    color: white;
+}
+
+.btn-box a:nth-child(1):hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+.btn-box a:nth-child(1)::before{
+    background: #1c00b5;
+    
+}
+
+.btn-box a:nth-child(2){
+    background: #1c00b5;
+    color: white;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    /* background: #081b29; */
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box a:nth-child(2):hover{
+    color: white;
+    cursor: pointer;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: #1c00b5;
+    
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.home-content{
+    /* background: yellowgreen; */
+    max-width: 600px;
+}
+
+.home-content p{
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px; 
+}
+
+.home-content p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #081b29; */
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+.home-content{
+    width: 360px;    
+    height: 420px;
+    /* background: transparent; */
+    border-color: black;
+    color: black;
+    /* top: 40%; */
+    /* left: 50%; */
+    position: absolute;
+    /* transform: translate(70%,-60%); */
+    box-sizing: border-box;
+    /* padding: 50px 30px; */
+
+}
+p{
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+
+.home-content p p{
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 20px;
+    color: black;
+    cursor: pointer;
+    
+
+}
+
+.home-content p{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.home-content p:hover{
+    color: rgb(214, 14, 14);
+    cursor: pointer;
+}
+
+    </style>
+    <style>
+@media screen and (max-width: 768px) {
+  .home-content {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: none;
+    margin: 50px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .box2 {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: none;
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 24px;
+    transform: none;
+    text-align: center;
+  }
+}        
+</style>
+</body>
+</html>

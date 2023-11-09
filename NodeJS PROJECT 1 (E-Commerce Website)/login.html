@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!</title>
+</head>
+<body>
+    <div class="side">
+        <h1>Welcome to WillKart</h1>
+    </div>
+    <div class="login">
+        <img src="" class="avatar">
+        <h1>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" minlength="8" maxlength="16" placeholder="Password">
+            <a href="/login?"><input type="submit" name="" value="Login"></a>
+            <a href="#">Forget Password?</a><br>
+            <a href="#">Don't have account?</a>
+        </form>
+    </div>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            background:rgba(0,0,0,0.7)url(https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+            background-size: cover;
+            background-blend-mode: darken;
+            /* background-position: center; */
+            font-family: sans-serif;
+        }
+
+        .side h1{
+            color: white;
+            font-size: 66px;
+            transform: translate(-15%,160px);
+        }
+
+        .login{
+            width: 360px;
+            height: 420px;
+            background: transparent;
+            border-color: black;
+            color: #fff;
+            top: 40%;
+            left: 50%;
+            position: absolute;
+            transform: translate(70%,-60%);
+            box-sizing: border-box;
+            padding: 50px 30px;
+        }
+        h1{
+            margin: 0;
+            padding: 0 0 12px;
+            text-align: center;
+            font-size: 22px;
+
+
+        }
+        .login p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+
+        }
+        .login input{
+            width: 100%;
+            margin-bottom: 20px;
+
+        }
+        .login input[type="text"], input[type="password"]{
+            border: black;
+            border-bottom: 1px solid #fff;
+
+            /* background: transparent; */
+            outline: none;
+            height: 20px;
+            color: black;
+            font-size: 12px;
+
+        }
+        .login input[type="submit"]{
+            border: none;
+            outline: none;
+            height: 30px;
+            background: #98FF98;
+            color: black;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        .login input[type="submit"]:hover{
+            cursor: pointer;
+            background: #98FF98;
+            color: grey;
+
+        }
+        .login a{
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 20px;
+            color: white;
+
+        }
+        .login a:hover{
+            color: grey;
+
+        }
+    </style>
+    <style>
+        @media only screen and (max-width: 600px) {
+        .login {
+            width: 80%;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .login input[type="text"],
+        input[type="password"] {
+            font-size: 14px;
+        }
+
+        .login input[type="submit"] {
+            font-size: 16px;
+        }
+
+        .login a {
+            font-size: 14px;
+        }
+        .side h1{
+            font-size: 25px;
+            transform: translate(-4%,260px);
+        }
+    }
+    </style>
+</body>
+</html>
